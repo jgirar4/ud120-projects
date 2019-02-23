@@ -25,7 +25,7 @@ features_train, features_test, labels_train, labels_test = preprocess()
 
 
 #########################################################
-from sklearn import GuassianNB()
+from sklearn import GuassianNB
 from sklearn.metrics import accuracy_score
 
 clf = GuassianNB()
@@ -39,7 +39,6 @@ prd = clf.predict(features_test)
 print "prediction time:", round(time()-t1, 3), "s"
 
 print "Accuracy:", accuracy_score(labels_test, prd)
-
 
 
 #########################################################
